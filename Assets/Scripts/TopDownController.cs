@@ -6,7 +6,7 @@ public class TopDownController : MonoBehaviour
     public event Action<Vector2> OnMoveEvent;
     public event Action<Vector2> OnLookEvent;
     public event Action OnAttackEvent;
-    protected bool IsAttecking { get; set; }
+    protected bool IsAttacking { get; set; }
     private float timeSinceLastAttack = float.MaxValue;
     private void Update()
     {
@@ -20,7 +20,7 @@ public class TopDownController : MonoBehaviour
         {
             timeSinceLastAttack += Time.deltaTime;
         }
-        else if (IsAttecking)
+        else if (IsAttacking)
         {
             timeSinceLastAttack = 0f;
             CallAttackEvent();
