@@ -12,4 +12,12 @@ public class Arrow : MonoBehaviour
     {
         rigid.velocity = transform.right * Speed;
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "WallCollision")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
