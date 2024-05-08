@@ -30,6 +30,7 @@ public class TopDownShooting : MonoBehaviour
 
     private void CreateProjectile()
     {
-        Instantiate(TestPrefab, projectileSpawnPosition.position, Quaternion.identity);
+        float rotZ = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
+        Instantiate(TestPrefab, projectileSpawnPosition.position, Quaternion.Euler(0, 0, rotZ));
     }
 }
