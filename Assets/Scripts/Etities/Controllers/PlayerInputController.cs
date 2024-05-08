@@ -5,8 +5,9 @@ public class PlayerInputController : TopDownController
 {
     private Camera camera;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         camera = Camera.main;
     }
     public void OnMove(InputValue value)
