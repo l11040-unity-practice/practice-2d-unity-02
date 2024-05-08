@@ -24,4 +24,8 @@ public class PlayerInputController : TopDownController
 
         CallLookEvent(newAim);
     }
+    public void OnFire(InputValue value)
+    {
+        IsAttecking = value.isPressed;
+    }
 }
