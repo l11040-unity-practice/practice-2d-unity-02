@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ProjectileController : TopDownController
@@ -76,8 +77,25 @@ public class ProjectileController : TopDownController
     }
     else if (IsLayerMatched(attackData.target.value, collision.gameObject.layer))
     {
-      // TODO : 데미지 주기
+      HealthSystem healthSystem = collision.GetComponent<HealthSystem>();
+      if (healthSystem != null)
+      {
+        bool isAttackApplied = healthSystem.ChangeHealth(-attackData.power);
+        if (isAttackApplied && attackData.isOnKnockBack)
+        {
+          ApplyKnockback(collision);
+        }
+      }
       DestroyProjectile(collision.ClosestPoint(transform.position), fxOnDestroy);
+    }
+  }
+
+  private void ApplyKnockback(Collider2D collision)
+  {
+    TopDownMovement movement = collision.GetComponent<TopDownMovement>();
+    if (movement != null)
+    {
+      movement.ApplyKnockback(transform, attackData.knockbackPower, attackData.knockbackTime);
     }
   }
 

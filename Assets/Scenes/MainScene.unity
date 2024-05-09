@@ -3866,6 +3866,8 @@ GameObject:
   - component: {fileID: 256429897}
   - component: {fileID: 256429901}
   - component: {fileID: 256429902}
+  - component: {fileID: 256429903}
+  - component: {fileID: 256429904}
   m_Layer: 6
   m_Name: OrcShaman
   m_TagString: Untagged
@@ -4006,7 +4008,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followRange: 15
   shootRange: 10
-  targetTag: Player
   characterRenderer: {fileID: 1221678827}
 --- !u!114 &256429900
 MonoBehaviour:
@@ -4048,6 +4049,31 @@ MonoBehaviour:
   armRenderer: {fileID: 1659484229}
   armPivot: {fileID: 241942447}
   characterRenderer: {fileID: 1221678827}
+--- !u!114 &256429903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256429893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b877315dab730340b07f0364a9cd3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthChangeDelay: 0.5
+--- !u!114 &256429904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256429893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99a4a78e7f4f754ea053d8fddca8a97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5189,6 +5215,8 @@ GameObject:
   - component: {fileID: 1322956086}
   - component: {fileID: 1322956087}
   - component: {fileID: 1322956088}
+  - component: {fileID: 1322956089}
+  - component: {fileID: 1322956090}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -5394,6 +5422,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba4749a8658915647a0288af1fdce61b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1322956089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322956078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b877315dab730340b07f0364a9cd3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthChangeDelay: 0.5
+--- !u!114 &1322956090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322956078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99a4a78e7f4f754ea053d8fddca8a97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1504875035
@@ -6270,6 +6323,8 @@ GameObject:
   - component: {fileID: 1589930589}
   - component: {fileID: 1589930588}
   - component: {fileID: 1589930585}
+  - component: {fileID: 1589930591}
+  - component: {fileID: 1589930592}
   m_Layer: 6
   m_Name: Goblin
   m_TagString: Untagged
@@ -6408,7 +6463,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   followRange: 20
-  targetTag: Player
   characterRenderer: {fileID: 1156875496}
 --- !u!114 &1589930590
 MonoBehaviour:
@@ -6420,6 +6474,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8c48737c1a1668408e0f97a93045738, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1589930591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589930581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b877315dab730340b07f0364a9cd3d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthChangeDelay: 0.5
+--- !u!114 &1589930592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589930581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e99a4a78e7f4f754ea053d8fddca8a97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1652451476
