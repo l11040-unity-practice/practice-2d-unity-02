@@ -135,9 +135,9 @@ GameObject:
   - component: {fileID: 1164083}
   - component: {fileID: 1164082}
   - component: {fileID: 1164081}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collision
-  m_TagString: WallCollision
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1019,7 +1019,7 @@ GameObject:
   - component: {fileID: 77500816}
   - component: {fileID: 77500818}
   - component: {fileID: 77500817}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3919,7 +3919,7 @@ GameObject:
   - component: {fileID: 719567560}
   - component: {fileID: 719567562}
   - component: {fileID: 719567561}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BackDeco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4546,7 +4546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 945978824}
   - component: {fileID: 945978825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4631,7 +4631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1223659486}
   - component: {fileID: 1223659487}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4722,7 +4722,7 @@ GameObject:
   - component: {fileID: 1322956085}
   - component: {fileID: 1322956086}
   - component: {fileID: 1322956087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4899,7 +4899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 1504875036}
-  TestPrefab: {fileID: 3866075663496512338, guid: c5587beca16ea7e40a5fcd0bc619f54f, type: 3}
+  TestPrefab: {fileID: 1996391624755584207, guid: c5587beca16ea7e40a5fcd0bc619f54f, type: 3}
 --- !u!114 &1322956087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4927,7 +4927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1504875036}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4960,7 +4960,7 @@ GameObject:
   - component: {fileID: 1569164958}
   - component: {fileID: 1569164960}
   - component: {fileID: 1569164959}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FrontDeco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5787,7 +5787,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652451478}
   - component: {fileID: 1652451477}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5834,7 +5834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1887554863}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
